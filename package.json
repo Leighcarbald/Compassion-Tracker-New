@@ -4,10 +4,11 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "tsx server/index.ts"
-  },
+  "dev": "vite",
+  "build": "vite build --root client --outDir dist/client",
+  "start": "node --enable-source-maps dist/index.js"
+},
+
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@jridgewell/trace-mapping": "^0.3.25",
